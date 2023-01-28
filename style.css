@@ -33,12 +33,21 @@ html, body {
     padding: 0;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
-    background: hsl(217, 28%, 15%);
+    background: hsl(218, 28%, 13%);
     color: white;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
 }
 
 nav {
     background: hsl(217, 28%, 15%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
 }
 
 a {
@@ -48,4 +57,500 @@ a {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
+
+h1 h2 h3 button ul.nav li{
+    font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    position: relative;
+    background: hsl(216, 53%, 9%);
+    padding: 20em 1.5em 1.5em;
+    z-index: -1;
+    top: -180px;
+
+}
+
+/* NAV SECTION */
+
+ul.nav {
+    display: flex;
+}
+
+ul.nav li {
+    padding-left: 1.5em;
+}
+
+ul.nav li a:hover {
+    color: hsl(198, 60%, 50%);
+}
+
+img.logo {
+    width: 100px;
+    height: 30px;
+}
+
+/* HERO SECTION */
+
+.intro-img {
+    width: 300px;
+}
+
+.hero-intro {
+    text-align: center;
+    background: hsl(217, 28%, 15%);
+    background-image: url('./images/bg-curvy-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.hero-intro .color {
+    background: hsl(218, 28%, 13%);
+}
+
+.hero-intro h1 {
+    font-size: 1.7em;
+    padding: .5em 0;
+    margin: 0;
+}
+
+.hero-intro p {
+    margin: 0;
+    line-height: 1.8em;
+    padding: 1em 1.5em;
+    background: hsl(218, 28%, 13%);
+}
+
+button {
+    background: linear-gradient(180deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border: 0px;
+    border-radius: 2em;
+    color: white;
+    padding: 1em 5em;
+    font-weight: bold;
+    margin: 2em;
+}
+
+button:hover {
+    background: hsl(176, 68%, 64%);
+}
+
+/* FEATURES SECTION */
+
+.features {
+    padding: 1.5em;
+    margin: 3em 1em;
+}
+
+.features-list {
+    text-align: center;
+    margin-bottom: 6em;
+}
+
+.icon {
+    height: 60px;
+
+}
+
+/* SUB HERO SECTION */
+
+.hero-sub {
+    padding: 1em;
+    margin: 0 1.5em;
+    display: grid;
+    place-items: center;
+}
+
+.sub-img {
+    width: 320px;
+}
+
+.sub-grid h1 {
+    font-size: 1.3rem;
+    padding: 1.2em 0;
+}
+
+.sub-grid p {
+    line-height: 1.5em;
+}
+
+.cta {
+    padding-bottom: .3em;
+    color: hsl(176, 68%, 64%);
+    font-size: .9rem;
+    border-bottom: solid 1px hsl(176, 68%, 64%);
+}
+
+.cta:hover {
+    color: hsl(198, 60%, 50%);
+    border-bottom: solid 1px hsl(198, 60%, 50%);
+}
+
+.arrow-svg {
+ 
+    padding-left: .2em;
+}
+
+/* TESTIMONIALS */
+
+ul.testimonial {
+    padding-top: 1em;
+    background-image: url('./images/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-position: top 35px left 50px;
+    background-size: 30px;
+}
+
+ul.testimonial li {
+    background: hsl(219, 30%, 18%);
+    padding: 2em;
+    margin: 3em;
+}
+
+ul.testimonial li p {
+    line-height: 2em;
+    font-size: .9rem;
+}
+
+.testimonial-flex {
+    display: flex;
+    padding-top: .5em;
+}
+
+.testimonial-flex p {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.profile-img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+.profile {
+    padding-left: 1em;
+}
+
+.profile p.name {
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.profile p.profile-title {
+    font-size: .6rem;
+    letter-spacing: .1em;
+}
+
+/* FORM */
+
+.form {
+    background: hsl(217, 28%, 15%);
+    margin: 10em 1.5em 0;
+    padding: 2em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5em;
+}
+
+.email-grid {
+    padding: 0 1em;
+}
+
+.email-grid p {
+    font-size: .7rem;
+    padding: 0;
+    padding-left: 3em;
+    padding-top: .1em;
+    margin: 0;
+    color: hsl(0, 100%, 63%);
+    text-align: left;
+}
+
+input[type="email"] {
+    width: 80%;
+    margin-top: 1.5em;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+}
+
+::placeholder {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+input:focus {
+    outline: 1px solid hsl(176, 68%, 64%);
+}
+
+button.submit {
+    width: 90%;
+    padding: 1em 1.5em;
+    margin: 1em auto;
+}
+
+/* FOOTER */
+
+.footer-logo {
+    padding-left: 2em;
+}
+
+.footer-container {
+    padding: 1em;
+}
+.footer-container ul li {
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.footer-container ul li p {
+    margin: 0;
+    padding-left: 1.5em;
+    line-height: 2em;
+}
+
+.footer-icon {
+    width: 1.3em;
+    height: 1.3em;
+    padding-top: .5em;
+}
+
+ul.footer-links {
+    padding-top: 1.5em;
+}
+
+ul.footer-links li {
+    padding-bottom: 1em;
+}
+
+ul.footer-links li a:hover {
+    color: hsl(198, 60%, 50%);
+}
+
+ul.social-media {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+ul.social-media li {
+    padding: 0 .5em;
+}
+
+.social-icon {
+    width: 2em;
+    height: 2em;
+}
+
+@media (min-width: 600px) {
+
+    .hero-intro .color {
+        padding: 2em 5em 0 5em;
+    }
+  
+    .hero-intro p {
+        padding: 0 5em;
+    }
+
+    .features {
+        margin: 3em 4em;
+    }
+
+    .hero-sub {
+        margin: 0 5em;
+    }
+
+    ul.testimonial {
+        padding: 1em 4em;
+    }
+
+    .form {
+        margin: 10em 5em;
+        padding: 2em 5em;
+    }
+
+    footer {
+        padding-left: 5em;
+        padding-right: 5em;
+        top: -300px;
+    }
+}
+
+@media (min-width: 950px) {
+
+    body {
+        font-size: 16px;
+    }
+    nav {
+        padding: 2em;
+    }
+
+    ul.nav li {
+        padding-left: 3em;
+    }
+
+    .hero-intro .color {
+        background: hsl(218, 28%, 13%);
+        padding: 0;
+    }
+
+    .hero-intro {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        background: hsl(217, 28%, 15%);
+        background-image: url('./images/bg-curvy-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        padding: 0 25em;
+    }
+
+    .intro-img {
+        width: 600px;
+    }
+
+    .hero-intro h1 {
+        font-size: 2rem;
+    }
+
+    .hero-intro p {
+        background: none;
+        padding: 1em 5em;
+    }
+
+    .hero-intro button {
+        margin-bottom: 5em;
+        max-width: 80%;
+    }
+
+    .features {
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(2, 400px);
+        grid-column-gap: 10em;
+    }
+
+    ul.features-list {
+        margin-bottom: 3em;
+    }
+
+    .hero-sub {
+        display: grid;
+        grid-template-columns: 50% auto;
+        column-gap: 2em;;
+        margin-bottom: 6em;
+
+    }
+
+    .sub-img {
+        width: 500px;
+    }
+
+    .sub-grid {
+        width: 90%;
+    }
+
+    .sub-grid h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .sub-grid p {
+        font-size: 1.2rem;
+    }
+
+    ul.testimonial {
+        display: flex;
+        margin: 0 2.5em;
+        padding: 3em 2em;
+    }
+
+    ul.testimonial li {
+        margin: 1em;
+    }
+
+    .form {
+        max-width: 70%;
+        margin: 5em auto;
+        padding: 1em 4em;
+    }
+
+    .form h2 {
+        font-size: 2rem;
+        margin: 1em;
+    }
+
+    .form p {
+        margin: 1em 3em;
+    }
+
+    .email-grid {
+        display: grid;
+        grid-template-columns: 70% auto;
+    }
+
+
+    input[type="email"] {
+        width: 80%;
+    }
+
+    .email-grid p {
+        padding-left: 0;
+        margin-top: .5em;
+    }
+
+    .email-grid p {
+        padding-left: 3em;
+    }
+
+    .email-grid button {
+        width: 200px;
+        height: 3.5em;
+        margin: 1.5em 0;
+    }
+
+    footer {
+        top: -230px;
+        padding: 15em 5em 1.5em 5em;
+
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-container ul {
+        padding-right: 2em;
+    }
+
+    .footer-container ul.width {
+        max-width: 400px;
+    }
+    ul.footer-links {
+        padding-top: 0;
+    }
+
+    ul.social-media {
+        padding: 0;
+    }
+
+    ul.social-media li {
+        padding: 0 .4em;
+    }
+    .social-icon {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+

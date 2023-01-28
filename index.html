@@ -15,7 +15,7 @@
     </title>
     <body>
         <nav>
-            <img src="./images/logo.svg" alt="Fylo Logo">
+            <img src="./images/logo.svg" alt="Fylo Logo" class="logo">
             <ul class="nav">
                 <li>
                     <a href="#">Features</a>
@@ -29,16 +29,22 @@
             </ul>
         </nav>
         <main>
-            <div class="hero intro">
+            
+            <div class="hero-intro">
                 <img src="./images/illustration-intro.png" alt="Hero Image" class="intro-img">
                 <h1>
                     All your files in one secure location, accessible anywhere.
-                </h1>
+                </h1>   
                 <p>
                     Fylo stores all your most important files in one secure location. Access them wherever 
                     you need, share and collaborate with friends family, and co-workers.
                 </p>
-                <button>Get Started</button>
+                <div class="color">
+                    <button>Get Started</button>
+                </div>
+                    
+                
+                
             </div>
 
             <div class="features">
@@ -95,7 +101,7 @@
                 </ul>
             </div>
 
-            <div class="hero sub">
+            <div class="hero-sub">
                 <img src="./images/illustration-stay-productive.png" alt="Illustration of productivity" class="sub-img">
                 <div class="sub-grid">
                     <h1>
@@ -125,7 +131,7 @@
                         </p>
                         <div class="testimonial-flex">
                             <img src="./images/profile-1.jpg" alt="Profile Image 1" class="profile-img">
-                            <div>
+                            <div class="profile">
                                 <p class="name">
                                     Satish Patel
                                 </p>
@@ -143,7 +149,7 @@
                         </p>
                         <div class="testimonial-flex">
                             <img src="./images/profile-2.jpg" alt="Profile Image 2" class="profile-img">
-                            <div>
+                            <div class="profile">
                                 <p class="name">
                                     Bruce McKenzie
                                 </p>
@@ -161,7 +167,7 @@
                         </p>
                         <div class="testimonial-flex">
                             <img src="./images/profile-3.jpg" alt="Profile Image 3" class="profile-img">
-                            <div>
+                            <div class="profile">
                                 <p class="name">
                                     Iva Boyd
                                 </p>
@@ -181,9 +187,12 @@
                     It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
                     questions, our support team would be happy to help you.
                 </p>
-                <div class="email-flex">
-                    <input type="email" placeholder="email@example.com">
-                    <button>Get Started For Free</button>
+                <div class="email-grid">
+                    <div>
+                        <input type="email" id="email" placeholder="email@example.com" required>
+                        <p id="error"></p>
+                    </div>
+                    <button class="submit" id="submit">Get Started For Free</button>
                 </div>
             </div>
 
@@ -194,7 +203,7 @@
             <img src="./images/logo.svg" class="footer-logo" alt="Logo">
             <div class="footer-container">
        
-                <ul>
+                <ul class="width">
                     <li>
                         <img src="./images/icon-location.svg" alt="Location Icon" class="footer-icon">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -233,18 +242,18 @@
 
                 <ul class="social-media">
                     <li>
-                        <a href="www.facebook.com">
+                        <a href="https://www.facebook.com" target="_blank">
                             <img src="./images/icon-facebook.png" alt="facebook icon" class="social-icon"> 
                         </a>
                     </li>
                     <li>
-                        <a href="www.twitter.com">
+                        <a href="https://www.twitter.com" target="_blank">
                             <img src="./images/icon-twitter.png" alt="Twitter icon" class="social-icon"> 
                         </a>
                     </li>
 
                     <li>
-                        <a href="www.instagram.com">
+                        <a href="https://www.instagram.com" target="_blank">
                             <img src="./images/icon-insta.png" alt="Instagram icon" class="social-icon"> 
                         </a>
                     </li>
